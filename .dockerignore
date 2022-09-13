@@ -1,0 +1,17 @@
+Dockerfile
+.dockerignore
+node_modules
+.git
+*.md
+LICENSE
+.vscode
+npm-debug.log
+coverage
+.env
+.env.test
+test
+*.yaml
+logs
+package-lock.json
+*.txt
+key.json

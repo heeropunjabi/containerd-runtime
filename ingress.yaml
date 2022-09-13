@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: traefic-ingress
+  annotations:
+    #ingress.kubernetes.io/ssl-redirect: "false"
+    #traefik.ingress.kubernetes.io/router.middlewares: default-mw-admin@kubernetescrd
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: containerd-example-service
+                port:
+                  number: 80
