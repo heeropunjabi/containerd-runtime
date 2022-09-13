@@ -15,7 +15,7 @@ spec:
         app: containerd-example
     spec:
       containers:
-        - image: mycluster-registry:5000/containerd-example:c92719c4
+        - image: mycluster-registry:5000/containerd-example:ecbe0185
           name: containerd-example
 
           ports:

@@ -33,6 +33,10 @@
 
     docker rmi -f $(docker images | grep 'containerd-example')
 
+## To check which container run being used by K8 cluster
+
+    kubectl get nodes -o wide # you will see it will show containerD
+
 ### NOTE
 
     Default configuration of K3d -->
