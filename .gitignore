@@ -32,7 +32,7 @@ logs
 key.json
 logger-service-account-file.json
 
-yarn.lock
+
 
 .clinic
 *.log
